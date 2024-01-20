@@ -1,17 +1,26 @@
 import { useState } from 'react'
-import {Button} from "assignment-ui"
+import {Modal} from "assignment-ui"
+
 
 
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
-    <div className='bg-yellow-700 p-4'>
-     Hello
-     
-<Button />
+  const userData = [{name:"Testman", dob:"1998-09-22", description:"hello"},
+  {name:"Testman 1", dob:"1998-09-22", description:"hello"},
+  {name:"Testman 2", dob:"1998-09-22", description:"hello"},
+  {name:"Testman 3", dob:"1998-09-22", description:"hello"},
+  {name:"Testman 5", dob:"1998-09-22", description:"hello"},
+  {name:"Testman", dob:"1998-09-22", description:"hello"}]
 
-    </div>
+  return (
+   
+   
+          <Modal userData={userData}></Modal>
+
+    
+
+
   )
 }
 
