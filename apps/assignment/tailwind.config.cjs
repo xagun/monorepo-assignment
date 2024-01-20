@@ -9,4 +9,11 @@ module.exports = {
     "./index.html",
     "../../packages/assignment-ui/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  theme: {
+    extend: {
+      colors: {
+        pinkSoft: "#ef89b1",
+      },
+    },
+  },
 };
