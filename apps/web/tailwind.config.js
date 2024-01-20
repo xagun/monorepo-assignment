@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+
+const sharedConfig = require("tailwind-config/tailwind.config.js");
+
 module.exports = {
-  content: ["./app/*.{js,ts,jsx,tsx,mdx}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+  ...sharedConfig,
+  content: [
+    "./app/*.{js,ts,jsx,tsx,mdx}",
+    "../../packages/assignment-ui/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
 };
